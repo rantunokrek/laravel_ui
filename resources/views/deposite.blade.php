@@ -5,7 +5,9 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }} <strong class="bold"> {{ Auth::user()->name}}</strong></div>
+                <div class="card-header">{{ __('Deposite') }}
+                     <strong class="bold"> {{ Auth::user()->name}}</strong>
+                </div>
               
                 <div class="card-body">
                     @if (session('status'))
@@ -16,7 +18,9 @@
 
                     {{ __('You are logged in!') }}
                 </div>
-                <a type="button" href="{{route('user.details',Crypt::encryptString('2') )}}" class="btn btn-sm btn-primary"> View Rantu</a>
+                <div class="depositeSite">
+                    <a href="#">Deposite now</a>
+                </div>
             </div>
         </div>
     </div>

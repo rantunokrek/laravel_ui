@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Crypt;
 
 class HomeController extends Controller
 {
@@ -25,4 +26,24 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    //deposite money
+ public function deposite()
+    {
+        return view('deposite');
+    }
+    //resen mail m
+ public function resend()
+    {
+      
+    }
+    //user details
+public function userDetail($id)
+    {
+     $id =  Crypt::decryptString($id);
+      echo $id;
+      //DB::table('users')->where('id', $id)->first();
+    }
+
+
 }
