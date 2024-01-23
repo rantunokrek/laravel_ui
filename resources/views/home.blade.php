@@ -17,7 +17,23 @@
                     {{ __('You are logged in!') }}
                 </div>
                 <a type="button" href="{{route('user.details',Crypt::encryptString('2') )}}" class="btn btn-sm btn-primary"> View Rantu</a>
+      
+
             </div>
+            <br>
+            <br>
+                  
+            <form method="post" action="{{route('store.user')}}">
+         @csrf
+                <div class="mb-3">
+                    hashing tutorial
+                    <br>
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+            
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
         </div>
     </div>
 </div>

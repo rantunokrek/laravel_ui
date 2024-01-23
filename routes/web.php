@@ -38,4 +38,7 @@ Route::get('/email/verify', function () {
 
 //this route for resend mail again
 Route::post('/resend-mail', [App\Http\Controllers\HomeController::class, 'resend'])->name('verification.resend');
+// encript and decript
 Route::get('/user/details/{id}', [App\Http\Controllers\HomeController::class, 'userDetail'])->name('user.details');
+// hashing password
+Route::post('/user/store', [App\Http\Controllers\HomeController::class, 'passHashing'])->name('store.user');

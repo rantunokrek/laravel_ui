@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Crypt;
 
 class HomeController extends Controller
@@ -44,6 +45,13 @@ public function userDetail($id)
       echo $id;
       //DB::table('users')->where('id', $id)->first();
     }
+
+
+public function passHashing(Request $anyname){
+    $pass = Hash::make($anyname->password);
+    echo $pass;
+}
+
 
 
 }
