@@ -67,6 +67,10 @@
                                     <a id="dropdown-item" href="{{ route('diposite.money') }}"  >
                                       Diposit
                                      </a>
+                                     <br>
+                                     <a id="dropdown-item" href="{{ route('password.change') }}"  >
+                                        Reset password
+                                       </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf

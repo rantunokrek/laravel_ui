@@ -42,3 +42,7 @@ Route::post('/resend-mail', [App\Http\Controllers\HomeController::class, 'resend
 Route::get('/user/details/{id}', [App\Http\Controllers\HomeController::class, 'userDetail'])->name('user.details');
 // hashing password
 Route::post('/user/store', [App\Http\Controllers\HomeController::class, 'passHashing'])->name('store.user');
+// password Change
+Route::get('/password/change', [App\Http\Controllers\HomeController::class, 'passChange'])->name('password.change');
+// pass update
+Route::post('/password/update', [App\Http\Controllers\HomeController::class, 'passUpdate'])->name('password.update');

@@ -26,7 +26,7 @@
             <form method="post" action="{{route('store.user')}}">
          @csrf
                 <div class="mb-3">
-                    hashing tutorial
+                  <h2> Numberic password making Has</h2>
                     <br>
                     <label for="exampleInputPassword1" class="form-label">Password</label>
                     <input type="password" name="password" class="form-control" id="exampleInputPassword1">
@@ -34,6 +34,8 @@
             
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
+
+            
         </div>
     </div>
 </div>
