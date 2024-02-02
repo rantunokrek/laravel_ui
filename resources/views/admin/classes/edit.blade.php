@@ -13,7 +13,7 @@
                 <strong class="text-danger">{{ session()->get('error') }}</strong>
                 @endif
                 <div class="card-body">
-                  <form action="{{route('class.update')}}" method="post">
+                  <form action="{{ route('class.update', $data->id) }}" method="post">
                     @csrf
                     <div class="form-group">
                       <label for="exampleInputClassName1">Class Name</label>

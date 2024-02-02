@@ -53,4 +53,4 @@ Route::post('class/store', [App\Http\Controllers\ClassController::class, 'classS
 
 Route::get('class/delete/{id}', [App\Http\Controllers\ClassController::class, 'delete'])->name('class.delete');
 Route::get('class/edit/{id}', [App\Http\Controllers\ClassController::class, 'edit'])->name('class.edit');
-Route::get('class/update/{id}', [App\Http\Controllers\ClassController::class, 'update'])->name('class.update');
+Route::post('class/update/{id}', [App\Http\Controllers\ClassController::class, 'update'])->name('class.update');
