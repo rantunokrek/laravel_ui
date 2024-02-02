@@ -15,25 +15,32 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    <a type="button" href="{{route('user.details',Crypt::encryptString('2') )}}" class="btn btn-sm btn-primary"> View Rantu</a>
                 </div>
-                <a type="button" href="{{route('user.details',Crypt::encryptString('2') )}}" class="btn btn-sm btn-primary"> View Rantu</a>
-      
+               
+              
 
             </div>
             <br>
             <br>
-                  
-            <form method="post" action="{{route('store.user')}}">
-         @csrf
-                <div class="mb-3">
-                  <h2> Numberic password making Has</h2>
+            <div class="card-body">
+                <div class="card-header"> <h2> Numberic password makin</h2></div>
+                <form method="post" action="{{route('store.user')}}">
+
+                    @csrf
+                    <div class="mb-3">
+                    
+              
+                   
                     <br>
                     <label for="exampleInputPassword1" class="form-label">Password</label>
                     <input type="password" name="password" class="form-control" id="exampleInputPassword1">
-                  </div>
-            
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div> 
+     
 
             
         </div>

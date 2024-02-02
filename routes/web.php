@@ -46,3 +46,11 @@ Route::post('/user/store', [App\Http\Controllers\HomeController::class, 'passHas
 Route::get('/password/change', [App\Http\Controllers\HomeController::class, 'passChange'])->name('password.change');
 // pass update
 Route::post('/password/update', [App\Http\Controllers\HomeController::class, 'passUpdate'])->name('password.update');
+//class
+Route::get('/class', [App\Http\Controllers\ClassController::class, 'classIndex'])->name('class.index');
+Route::get('class/create', [App\Http\Controllers\ClassController::class, 'classCreate'])->name('class.create');
+Route::post('class/store', [App\Http\Controllers\ClassController::class, 'classStore'])->name('class.store');
+
+Route::get('class/delete/{id}', [App\Http\Controllers\ClassController::class, 'delete'])->name('class.delete');
+Route::get('class/edit/{id}', [App\Http\Controllers\ClassController::class, 'edit'])->name('class.edit');
+Route::get('class/update/{id}', [App\Http\Controllers\ClassController::class, 'update'])->name('class.update');
