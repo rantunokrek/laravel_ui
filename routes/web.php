@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\StudentsController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
@@ -54,3 +55,6 @@ Route::post('class/store', [App\Http\Controllers\ClassController::class, 'classS
 Route::get('class/delete/{id}', [App\Http\Controllers\ClassController::class, 'delete'])->name('class.delete');
 Route::get('class/edit/{id}', [App\Http\Controllers\ClassController::class, 'edit'])->name('class.edit');
 Route::post('class/update/{id}', [App\Http\Controllers\ClassController::class, 'update'])->name('class.update');
+
+// Students Controller
+Route::resource('students', StudentsController::class);

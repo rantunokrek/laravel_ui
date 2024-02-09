@@ -39,6 +39,17 @@
 
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+<br>
+<br>
+<br>
+              <div class="class_div">
+                <div class="card-header"> <strong>Class And Student</strong></strong></div>
+                <a href="{{route('class.index')}}" class="btn btn-sm btn-primary"> class</a>
+                <a href="{{route('students.index')}}" class="btn btn-sm btn-primary"> Student </a>
+              </div>
+
+
+
             </div> 
      
 
