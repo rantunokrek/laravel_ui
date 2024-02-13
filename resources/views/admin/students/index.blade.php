@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header"> All Students</div>
 
@@ -43,7 +43,7 @@
                       <td>{{$item->phone}}</td> 
                       <td>{{$item->email}}</td> 
                       <td>{{$item->address }}</td> 
-                      <td>{{$item->class_id }}</td> 
+                      <td>{{$item->class_name }}</td> 
                     
                     
                       
